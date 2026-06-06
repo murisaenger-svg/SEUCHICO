@@ -1,33 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Site</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:400px;
+    text-align:center;
+}
+
+h1{
+    margin-bottom:25px;
+}
+
+.topico{
+    background:#222;
+    padding:15px;
+    margin:10px 0;
+    border-radius:12px;
+}
+
+h2{
+    margin-bottom:10px;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    margin:5px 0;
+}
+</style>
 </head>
 <body>
 
+<div class="container">
+
     <h1>Meu Site</h1>
 
-    <h2>Sobre</h2>
-    <p>Texto sobre o assunto.</p>
+    <div class="topico">
+        <h2>Sobre</h2>
+        <p>Texto sobre o assunto.</p>
+    </div>
 
-    <h2>Serviços</h2>
-    <ul>
-        <li>Serviço 1</li>
-        <li>Serviço 2</li>
-        <li>Serviço 3</li>
-    </ul>
+    <div class="topico">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Serviço 1</li>
+            <li>Serviço 2</li>
+            <li>Serviço 3</li>
+        </ul>
+    </div>
 
-    <h2>Projetos</h2>
-    <ul>
-        <li>Projeto A</li>
-        <li>Projeto B</li>
-        <li>Projeto C</li>
-    </ul>
+    <div class="topico">
+        <h2>Projetos</h2>
+        <ul>
+            <li>Projeto A</li>
+            <li>Projeto B</li>
+            <li>Projeto C</li>
+        </ul>
+    </div>
 
-    <h2>Contato</h2>
-    <p>Email: exemplo@email.com</p>
+    <div class="topico">
+        <h2>Contato</h2>
+        <p>email@exemplo.com</p>
+    </div>
+
+</div>
 
 </body>
 </html>
